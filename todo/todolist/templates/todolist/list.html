@@ -1,0 +1,23 @@
+{% extends 'todolist/layout.html' %}
+{% block title%}Список моих дел{% endblock %}
+{% block content%}
+{%for eachstroka in alltodos%}
+<div class="row">
+    <div class="col-md-6" style="margin:0 auto;">
+        <div class="card container-fluid" style="margin-top: 1rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{eachstroka.title}} {{eachstroka.priority}}</h5>
+              <p class="card-text">{{eachstroka.description}}</p>
+              <p class="card-text">{{eeachstroka.created_at}}</p>
+
+              <a href="/delete/{{eachstroka.id}}" class="btn btn-danger">Delete</a>
+              <a href="/edit/{{eachstroka.id}}" class="btn btn-warning">Edit</a>
+
+
+            </div>
+          </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}

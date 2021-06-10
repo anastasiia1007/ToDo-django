@@ -1,0 +1,47 @@
+body {
+    background-color: azure;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.panel {
+    display: flex;
+}
+
+input {
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+}
+
+.img{
+    text-align: center;
+}
+
+.remove {
+    position: absolute;
+    right: 20px;
+}
+
+.navbar-default{
+  text-align:center;
+}
+.navbar-center{
+   display: inline-block;
+   float: none;
+}
+
+/*text-decoration: line-through   Пригодится для зачеркивания текста*/
+
+
